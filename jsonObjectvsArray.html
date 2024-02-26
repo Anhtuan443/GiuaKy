@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Object & Json Array</title>
+    <link rel="shortcut icon" href="/asset/img/Avatar.png" type="image/x-icon">
+    <link rel="stylesheet" href="/asset/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="header"></section>
+    <section class="content">
+        <table>
+            <tr>
+                <td class="ava-section">
+                    <container class="avata-container"></container>
+                </td>
+                <td class="content-section">
+                    <p>
+                        JsonObject và JsonArray là hai lớp quan trọng trong thư viện JSON (JavaScript Object Notation) để đại diện cho dữ liệu JSON trong các ngôn ngữ lập trình khác nhau. Dưới đây là cấu trúc cơ bản của chúng:</p>
+                    <h3> 1. JsonObject:</h3>
+
+                    <p>JsonObject thường được sử dụng để đại diện cho một đối tượng JSON, nơi mà dữ liệu được tổ chức dưới dạng các cặp "key-value". Trong các ngôn ngữ lập trình như Java, C#, Python, và JavaScript, cấu trúc này thường được gọi là "dictionary", "map", hoặc "object".
+                        <br>
+                        <br>
+                        Trong đó
+                        <ul>
+                            <li> "key1", "key2", "key3", "key4" là các khóa (keys).</li>
+                            <li>"value1", "value2" là giá trị tương ứng với mỗi khóa.</li>
+                            <li> "key3" có giá trị là một JsonObject lồng (nested JsonObject).</li>
+                            <li> "key4" có giá trị là một JsonArray.</li>
+                        </ul>
+                    </p>
+                    <h3> 2. JsonArray:</h3>
+                    <p>JsonArray đại diện cho một mảng JSON, nơi dữ liệu được tổ chức dưới dạng danh sách có thứ tự. Trong các ngôn ngữ lập trình, cấu trúc này thường tương đương với "list" hoặc "array". </p>
+                        <br>
+                        <br>
+                        Trong đó
+                        <ul>
+                            <li> "value1", "value2" là các phần tử của mảng.</li>
+                            <li> Một phần tử của mảng có thể là một JsonObject hoặc một JsonArray.</li>
+                            <li> JsonArray có thể chứa các kiểu dữ liệu khác nhau, bao gồm chuỗi, số, boolean, và các cấu trúc lồng nhau khác.</li>
+                        </ul>
+
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="footer"></section>
+    <script>
+        $(function () {
+            $(".header").load("header.html");
+            $(".footer").load("footer.html");
+            $(".avata-container").load("avatar.html");
+        });
+    </script>
+</body>
+
+</html>

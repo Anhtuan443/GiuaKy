@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM và Control</title>
+    <link rel="shortcut icon" href="assets/img/ava-vanan.png" type="image/x-icon">
+    <link rel="stylesheet" href="/asset/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="header"></section>
+    <section class="content">
+        <table>
+            <tr>
+                <td class="ava-section">
+                    <container class="avata-container"></container>
+                </td>
+                <td class="content-section">
+                    <h3><u>Các thuộc tính của form</u></h3>
+                    <ul>
+                        <li>Name (Tên): tên Form</li>
+                        <li>Action (Hành động): Xác định URL của trang web hoặc dịch vụ web nơi dữ liệu được gửi khi người dùng nhấn nút gửi</li>
+                        <li>Method (Phương thức): Xác định cách dữ liệu được gửi đi. Phổ biến nhất là GET và POST</li>
+                        <li>Input (Đầu vào): Được sử dụng để tạo các ô nhập dữ liệu như văn bản, mật khẩu, checkbox, radio, và nhiều loại khác.</li>
+                        <li>Select và option (Danh sách chọn): Tạo danh sách chọn để người dùng lựa chọn một hoặc nhiều giá trị.</li>
+                    </ul>
+                    <hr>
+                    <h3><u>Trên web có 3 loại nút:</u></h3>
+                    <ul>
+                        <li>Submit:  Dùng để gửi dữ liệu từ form đến máy chủ để xử lý.</li>
+                        <li>Reset: Dùng để làm mới tất cả các ô nhập liệu trong form về giá trị mặc định.</li>
+                        <li>Normal: Đơn giản là một nút không thực hiện thao tác gửi form hay reset form, mà thường được sử dụng để kích thích các hành động JavaScript.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="footer"></section>
+    <script>
+        $(function () {
+            $(".header").load("header.html");
+            $(".footer").load("footer.html");
+            $(".avata-container").load("avatar.html");
+        });
+    </script>
+</body>
+
+</html>
